@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/product.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            Portfolio
+        </div>
+        <nav class="navbar">
+            <a href="#about-me">About Me</a>
+            <a href="#products">Products</a>
+            <button id="contact-button">Contact Me</button>
+        </nav>
+    </header>
+        <div class="title">
+            <div class="titleText">
+                <h1>Portfolio</h1>
+                <h4>-SogoRei Cording Products-</h4>
+            </div>
+            <img src="./Public/images/titleGirl.png" alt="" height="400">
+        </div>
+        <div class="svg-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 100" width="100%">
+              <path d="M 1696 59 C 1376 59 1376 90 1056 90 C 736 90 736 41 416 41 C 96 41 96 84 -224 84 L 0 0 L 1280 0 Z" fill="#e1cabba4"></path>
+            </svg>
+        </div>
+    
+    <main>
+        <section id="products" class="products">
+            <h2>Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="./Public/images/tamalog.png" alt="product1" height="300">
+                    <div class="product-text">
+                        <div class="product-icons">
+                            <div class="product-kozin">個人制作</div>
+                            <div class="product-type">#webアプリ</div>
+                            <div class="product-award">KCL☆Hack(2024/11)最優秀賞</div>
+                        </div>
+                        <div class="product-title">体組成計管理アプリ"たまLog"</div>
+                        <div class="product-coment">結果用紙の写真をアップロードするだけ！</div>
+                        <div class="product-skil">言語>>Typescript/JavaScript/CSS/Python</div>
+                        <div class="product-skil">フレームワーク>>Next.js/React/Flask</div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-text">
+                        <div class="product-icons">
+                            <div class="product-team">チーム制作</div>
+                            <div class="product-type">#webアプリ</div>
+                            <div class="product-award">ハックツハッカソン(2024/12)企業賞</div>
+                        </div>
+                        <div class="product-title">わたしが!?「市か区」の観光大臣!</div>
+                        <div class="product-coment">写真を撮ってポスターをつくちゃおう！</div>
+                        <div class="product-skil">言語>>Typescript/JavaScript/CSS/Python</div>
+                        <div class="product-skil">フレームワーク>>Next.js/React/Flask</div>
+                    </div>
+                    <img src="./Public/images/shikaku.png" alt="product1" height="300">
+                </div>
+                <div class="product-item">Product 3</div>
+                <div class="product-item">Product 4</div>
+            </div>
+        </section>
+        <section id="about-me" class="about-me">
+            <h2>About Me</h2>
+            <p>Welcome! I am a passionate developer with a love for creating innovative solutions. Here’s a little about me.</p>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!--contactModal -->
+    <div id="modal-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

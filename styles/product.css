@@ -1,0 +1,70 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.product-item {
+    display:flex;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Zen';
+}
+
+.product-text{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+    justify-content: center;
+}
+.product-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product-kozin{
+    background-color: rgb(190, 160, 188);
+    font-family: 'Zen';
+    color: #ffffff;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10%;
+}
+.product-team{
+    background-color: rgb(160, 190, 181);
+    font-family: 'Zen';
+    color: #ffffff;
+    font-size: 20px;
+    height: 40px;
+    width: 110px;
+    text-align: center;
+    border-radius: 10%;
+}
+.product-type{
+    margin-left: 30px;
+    font-size: 20px;
+    color: #a1bfec;
+}
+.product-award{
+    margin-left: 30px;
+    font-size: 15px;
+    border-bottom: dotted 3px orange;
+}
+.product-title{
+    font-size: 2rem;
+    margin-top: 30px;
+    border-bottom: solid 2px rgb(43, 41, 39);
+    
+}
+.product-coment{
+    margin-top: 10px;
+}
+.product-skil{
+    color: rgb(155, 170, 184);
+    font-size: 0.7rem;
+}
