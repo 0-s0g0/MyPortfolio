@@ -53,6 +53,15 @@
     height: 10px;
 }
 
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    /* displayをnoneに指定してください */
+    display:none;
+  }
+
 @media (max-width: 1400px) {
 
     .logo{
@@ -74,4 +83,13 @@
         height: 10px;
     }
 
+}
+
+@media (max-width: 1000px){
+	.navbar{
+		display:none;
+	}
+	.menu-icon{
+		display:block;
+	}
 }

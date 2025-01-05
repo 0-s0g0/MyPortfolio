@@ -181,21 +181,33 @@ body {
 
 @media (max-width: 670px) {
     .title {
-        height:300px;   
+        height:30%;   
     }
     
-    
+    products {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .titleText {
+        width: 60%;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .titleText h1 {
-        width: 300px;
-        font-size: 3rem; 
+        width: 100%;
+        font-size: 2rem; 
     }
+    
     .titleText h4 {
-        width: 300px;
+        width: 100%;
         font-size: 1rem; 
     }
     
     .title img {
-        height: 300px;
+        height: 130px;
     }
     
     
@@ -210,7 +222,7 @@ body {
     }
     
     .products h2{
-        font-size:4em;
+        font-size:2em;
         line-height:1em;
     }
 }

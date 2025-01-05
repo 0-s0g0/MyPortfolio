@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+    width: 100%;
 }
 
 .product-item {
@@ -14,7 +15,22 @@
     width: 100%;
 }
 
+.product-item2 {
+    display:flex;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Zen';
+    width: 100%;
+}
+
 .product-item img{
+    width: 30%;
+    object-fit:contain;
+}
+
+.product-item2 img{
     width: 30%;
     object-fit:contain;
 }
@@ -34,12 +50,12 @@
 
 .product-kozin{
     background-color: rgb(190, 160, 188);
-    line-height:60px;/*縦中央揃えにするならheightと同じ値にする*/
+    line-height:40px;/*縦中央揃えにするならheightと同じ値にする*/
     font-family: 'Zen';
     color: #ffffff;
-    font-size: 2rem;
-    height: 60px;
-    width: 200px;
+    font-size: 1.5rem;
+    height: 40px;
+    width: 130px;
     text-align: center;
     border-radius: 10%;
 }
@@ -47,37 +63,37 @@
     background-color: rgb(160, 190, 181);
     font-family: 'Zen';
     color: #ffffff;
-    font-size: 2rem;
-    line-height:60px;
-    height: 60px;
-    width: 200px;
+    font-size: 1.5rem;
+    line-height:40px;
+    height: 40px;
+    width: 130px;
     text-align: center;
     border-radius: 10%;
 }
 .product-type{
     margin-left: 10px;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #a1bfec;
 }
 .product-award{
     margin-left: 10px;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     border-bottom: dotted 3px orange;
 }
 .product-title{
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 60px;
     border-bottom: solid 2px rgb(43, 41, 39);
     
 }
 .product-coment{
     margin-top: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .product-skil{
     color: rgb(155, 170, 184);
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 
@@ -88,6 +104,11 @@
         object-fit:contain;
     }
     
+    .product-item2 img{
+        width: 30%;
+        object-fit:contain;
+    }
+
     .product-text{
         margin: 0 5%;
         width: 60%;
@@ -107,11 +128,11 @@
     }
     .product-type{
         margin-left: 5%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .product-award{
         margin-left: 5%;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .product-title{
         font-size: 2.5rem;
@@ -130,78 +151,133 @@
 
 }
 
-@media (max-width: 670px) {
-    .product-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+@media (max-width: 1000px) {
+    .product-item img{
+        width: 40%;
+        object-fit:contain;
     }
     
-    .product-item {
-        display:flex;
-        flex-direction: column;
-        padding: 20px;
-        border-radius: 5px;
-        text-align: center;
-        justify-content: center;
-        font-family: 'Zen';
+    .product-item2 img{
+        width: 40%;
+        object-fit:contain;
     }
-    .product-item img{
-        height: 300px;
-    }
+
     .product-text{
-        display: flex;
-        flex-direction: column;
-        margin: 0 5%;
-        justify-content: center;
-    }
-    .product-icons{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        margin: 0 1%;
+        width: 65%;
     }
     
     .product-kozin{
-        background-color: rgb(190, 160, 188);
-        font-family: 'Zen';
-        color: #ffffff;
-        font-size: 20px;
-        height: 40px;
-        width: 100px;
-        text-align: center;
-        border-radius: 10%;
+        line-height:50px;/*縦中央揃えにするならheightと同じ値にする*/
+        font-size: 1rem;
+        height: 50px;
+        width: 80px;
     }
     .product-team{
-        background-color: rgb(160, 190, 181);
-        font-family: 'Zen';
-        color: #ffffff;
-        font-size: 20px;
-        height: 40px;
-        width: 110px;
-        text-align: center;
-        border-radius: 10%;
+        line-height:50px;/*縦中央揃えにするならheightと同じ値にする*/
+        font-size: 1rem;
+        height: 50px;
+        width: 100px;
     }
     .product-type{
-        margin-left: 10px;
-        font-size: 20px;
-        color: #a1bfec;
+        margin-left: 4%;
+        font-size: 1rem;
     }
     .product-award{
-        margin-left: 10px;
-        font-size: 15px;
-        border-bottom: dotted 3px orange;
+        margin-left: 5%;
+        font-size: 0.75rem;
     }
     .product-title{
-        font-size: 2rem;
-        margin-top: 30px;
-        border-bottom: solid 2px rgb(43, 41, 39);
-        
+        font-size: 1.5rem;
+        margin-top: 60px;        
     }
+
     .product-coment{
-        margin-top: 10px;
+        margin-top: 20px;
+        font-size: 1rem;
     }
     .product-skil{
-        color: rgb(155, 170, 184);
-        font-size: 0.7rem;
+        margin-top: 10px;
+        font-size: 0.75rem;
     }
+
+}
+
+@media (max-width: 670px) {
+    .product-grid{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .product-item {
+        padding: 0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Zen';
+        width: 90%;
+    }
+    .product-item2 {
+        display:flex;
+        flex-direction:column-reverse;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Zen';
+        width: 100%;
+    }
+
+    .product-item img{
+        width: 80%;
+        object-fit:contain;
+    }
+    
+    .product-item2 img{
+        width: 80%;
+        object-fit:contain;
+    }
+    .product-icons{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-text{
+        margin: 10% 0%;
+        width: 100%;
+    }
+    
+    .product-kozin{
+        line-height:20px;/*縦中央揃えにするならheightと同じ値にする*/
+        font-size: 0.6rem;
+        height: 20px;
+        width: 80px;
+    }
+    .product-team{
+        line-height:20px;/*縦中央揃えにするならheightと同じ値にする*/
+        font-size: 0.6rem;
+        height: 20px;
+        width: 80px;
+    }
+    .product-type{
+        font-size: 0.8rem;
+    }
+    .product-award{
+        font-size: 0.5rem;
+    }
+    .product-title{
+        font-size: 1rem;
+        margin-top: 60px;        
+    }
+
+    .product-coment{
+        margin-top: 20px;
+        font-size: 0.8rem;
+    }
+    .product-skil{
+        margin-top: 10px;
+        font-size: 0.5rem;
+    }
+
 }
