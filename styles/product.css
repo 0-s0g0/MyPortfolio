@@ -253,6 +253,15 @@
         width: 100%;
     }
 
+    .product-item3 {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Zen';
+        width: 100%;
+    }
+
     .product-item img{
         width: 80%;
         object-fit:contain;
