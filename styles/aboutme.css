@@ -1,0 +1,25 @@
+.aboutmeBox{
+    display:flex;
+    flex-direction:low;
+    justify-content:center;
+    align-items:center;
+    gap:100px
+    
+}
+
+.about-me img{
+    height:300px;
+    background-color: #e1cabba4;
+    border-radius:300px;
+}
+
+.aboutmetext{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.aboutmetextName{
+    font-weight: bold;
+
+}
