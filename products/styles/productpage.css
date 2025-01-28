@@ -1,0 +1,31 @@
+.Ptitle{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:100px;
+}
+
+.Ptitle img{
+    height:500px
+}
+
+.titleText{
+    font-family:serif;
+}
+.titleText h1{
+    font-family:serif;
+}
+.table{
+    margin:100px;
+}
+
+table  {
+    border: 1px solid #000;
+  }
+   
+  table th {
+    border: 1px solid #000;
+  }
+  table td {
+    border: 1px solid #000;
+  }

@@ -4,84 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/product.css">
-    <link rel="stylesheet" href="./styles/productModal.css">
-    <link rel="stylesheet" href="./styles/aboutme.css">
+    <link rel="stylesheet" href="./styles/productpage.css">
+    <link rel="stylesheet" href="./../styles/product.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            MyPortfolio
-        </div>
-        <a herf="#" class = "menu-icon">
-            <span class ="fa fa-bars"></span>
-        </a>
-        <nav class="navbar">
-            
-            <a href="#about-me">
-                <div class="headerBIG">About</div>
-                <div class="headerSMALL">わたしについて</div>
-            </a>
-            <a href="#products">
-                <div class="headerBIG">Products</div>
-                <div class="headerSMALL">作品紹介</div>
-            </a>
-            <button id="OpenModalContact">
-                <div class="headerBIG">Contact</div>
-                <div class="headerSMALL">お問い合わせ</div>
-            </button>
-        </nav>
-    </header>
-        <div class="title">
+        <div class="Ptitle">
             <div class="titleText">
-                <h1>Portfolio</h1>
+                <h3>体組成計管理アプリ</h3>
+                <h1>たまLog</h1>
+
                 <h4>-SogoRei Cording Products-</h4>
             </div>
-            <img src="./Public/images/titleGirl.png" alt="" >
-        </div>
-        <div class="svg-wave">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 100" width="100%">
-              <path d="M 1696 59 C 1376 59 1376 90 1056 90 C 736 90 736 41 416 41 C 96 41 96 84 -224 84 L 0 0 L 1280 0 Z" fill="#e1cabba4"></path>
-            </svg>
+            <img src="./../Public/images/tamalog.png" alt="" >
         </div>
     
     <main>
-        <section id="products" class="products">
-            <h2>Products</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="./Public/images/tamalog.png" alt="product1">
-                    <div class="product-text">
-                        <div class="product-icons">
-                            <div class="product-kozin">個人制作</div>
-                            <div class="product-type">#webアプリ</div>
-                            <div class="product-award">KCL☆Hack(2024/11)金賞</div>
-                        </div>
-                        <div class="product-title">体組成計管理アプリ"たまLog"</div>
-                        <div class="product-coment">結果用紙の写真をアップロードするだけ！</div>
-                        <div class="product-skil">言語>>Typescript/JavaScript/CSS/Python</div>
-                        <div class="product-skil">フレームワーク>>Next.js/React/Flask</div>
-                        <button id="OpenModalProduct1">詳しくみる⇀</button>
-                    </div>
-                </div>
-                
-
-            </div>
-        </section>
-        <section id="about-me" class="about-me">
-            <h2>About Me</h2>
-            <div class='aboutmeBox'>
-                <img src="./Public/images/Me.png" alt="product3">
-                <div class="aboutmetext">
-                    <div class="aboutmetextName">Sogo Rei</div>
-                    <div class="aboutmetextSub">北九州の大学四年生(2025.4大学院進学予定)</div>
-                    <div class="aboutmetextMain">制御工学を専攻し，医用画像工学を研究テーマにしています．趣味でハッカソンなどに参加してアプリ制作をしています.研究で得た知識を何か形にできないかなと思いはじめました．</div>
-                </div>
-            </div>
-        </section>
+        <div class="table">
+            <table>
+                <tbody>
+                    <tr>
+                    <th>項目</th>
+                    <td>内容</td>
+                    </tr>
+                    <tr>
+                    <th>項目</th>
+                    <td>内容</td>
+                    </tr>
+                    <tr>
+                    <th>項目</th>
+                    <td>内容</td>
+                    </tr>
+                    <tr>
+                    <th>項目</th>
+                    <td>内容</td>
+                    </tr>
+                </tbody>
+            </table>
+       
+        </div>
         
     </main>
     <footer class="footer">
