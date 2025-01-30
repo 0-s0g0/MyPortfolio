@@ -15,12 +15,16 @@
 .titleText h1{
     font-family:serif;
 }
-.table{
-    margin:100px;
-}
 
+.table{
+    display:flex;
+    margin:100px;
+    align-items:center;
+    justify-content: center;
+
+}
 table  {
-    border: 1px solid #000;
+    
   }
    
   table th {
