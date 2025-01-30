@@ -14,38 +14,86 @@
                 <h3>体組成計管理アプリ</h3>
                 <h1>たまLog</h1>
 
-                <h4>-SogoRei Cording Products-</h4>
+                <h4>-たのしく簡単に健康生活-</h4>
             </div>
             <img src="./../Public/images/tamalog.png" alt="" >
         </div>
+
+        <div class="slider-back">
+            <div class="slider-container">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                
+                <div class="slider">
+                    <div class="slide"><img src="./images/product1/Slide1-p1.PNG" alt="1"></div>
+                    <div class="slide"><img src="./images/product1/Slide2-p1.PNG" alt="2"></div>
+                    <div class="slide"><img src="./images/product1/Slide3-p1.PNG" alt="3"></div>
+                    <div class="slide"><img src="./images/product1/Slide4-p1.PNG" alt="4"></div>
+                    <div class="slide"><img src="./images/product1/Slide5-p1.PNG" alt="5"></div>
+                    <div class="slide"><img src="./images/product1/Slide6-p1.PNG" alt="6"></div>
+                    <div class="slide"><img src="./images/product1/Slide7-p1.PNG" alt="7"></div>
+                    <div class="slide"><img src="./images/product1/Slide8-p1.PNG" alt="8"></div>
+                    <div class="slide"><img src="./images/product1/Slide9-p1.PNG" alt="9"></div>
+                    <div class="slide"><img src="./images/product1/Slide10-p1.PNG" alt="10"></div>
+                </div>
+        
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        
+            <div class="indicator-container">
+                <div class="indicator active">1</div>
+                <div class="indicator">2</div>
+                <div class="indicator">3</div>
+                <div class="indicator">4</div>
+                <div class="indicator">5</div>
+                <div class="indicator">6</div>
+                <div class="indicator">7</div>
+                <div class="indicator">8</div>
+                <div class="indicator">9</div>
+                <div class="indicator">10</div>
+            </div>
+        </div>
     
+
     <main>
         <div class="table">
             <table>
                 <tbody>
                     <tr>
                         <th>目的</th>
-                        <td>内容</td>
+                        <td>webアプリを初めて作ってみる。画像処理を取り入れてみたい<br>大学にある体組成計の記録用紙をデジタル化してみる</td>
                     </tr>
                     <tr>
-                        <th>設計</th>
-                        <td>内容</td>
+                        <th>機能</th>
+                        <td>(1) 記録用紙の画像から数値の取得(画像処理 : 二値化→領域検出→k-nn最近傍法)<br>
+                            (2) 得られた数値を可視化(目標との差分値の表示、現在の体組成割合を円グラフで)<br>
+                            (3) 過去の履歴の表示(データ項目ごとの折れ線グラフ、データの一覧)<br>
+                            (4) カレンダーをもちいた運動の記録<br>           
+                            (5) 豆知識表示<br>   
+                            (6) 入力回数によるキャラクターの成長<br>
+                            (7) ログイン/サインイン<br>    
+                        </td>
                     </tr>
                     <tr>
                        <th>担当箇所</th>
-                       <td>内容</td>
+                       <td>すべて(個人)</td>
                     </tr>
                     <tr>
                         <th>使用技術</th>
-                        <td>内容</td>
+                        <td>言語>>Typescript/Python/HTML/JavaScript/CSS<br>
+                            フレームワーク>>Next.js/Frask/React/CSS Modules/CSS<br>
+                            データベース>>Firestore<br>
+
+                        </td>
+                        
                     </tr>
                     <tr>
                         <th>発表プロダクト</th>
-                        <td>内容</td>
+                        <td>KCL☆Hack(学内プロジェクトハッカソン)</td>
                     </tr>
                     <tr>
                         <th>制作期間</th>
-                        <td>内容</td>
+                        <td>(webアプリの仕組みなどの勉強)  3か月<br>
+                        (デザイン・コーディング)                2か月</td>
                     </tr>
                 </tbody>
             </table>
@@ -63,5 +111,6 @@
     
 
     <script src="contactModal.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
