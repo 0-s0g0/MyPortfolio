@@ -2,8 +2,13 @@
     font-family: 'Zen';
     src: url('../../Public/fonts/ZenKakuGothicNew-Regular.ttf') format('truetype');
     }
-
+.topmargin{
+    height: 60px;
+    padding: 20px;
+    background-color:  #e1cabba4;
+}
 .Ptitle{
+    margin-top:20px;
     display:flex;
     justify-content: center;
     align-items:center;
