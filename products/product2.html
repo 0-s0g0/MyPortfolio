@@ -30,83 +30,58 @@
                 <h4>-画像処理を用いて写真を観光ポスター風に加工-</h4>
             </div>
             <img src="./../Public/images/shikaku.png" alt="" >
-        </div>
-
-        <div class="slider-back">
-            <div class="slider-container">
-                <button class="prev" onclick="prevSlide()">&#10094;</button>
-                
-                <div class="slider">
-                    <div class="slide"><img src="./images/product1/Slide1-p1.PNG" alt="1"></div>
-                    <div class="slide"><img src="./images/product1/Slide2-p1.PNG" alt="2"></div>
-                    <div class="slide"><img src="./images/product1/Slide3-p1.PNG" alt="3"></div>
-                    <div class="slide"><img src="./images/product1/Slide4-p1.PNG" alt="4"></div>
-                    <div class="slide"><img src="./images/product1/Slide5-p1.PNG" alt="5"></div>
-                    <div class="slide"><img src="./images/product1/Slide6-p1.PNG" alt="6"></div>
-                    <div class="slide"><img src="./images/product1/Slide7-p1.PNG" alt="7"></div>
-                    <div class="slide"><img src="./images/product1/Slide8-p1.PNG" alt="8"></div>
-                    <div class="slide"><img src="./images/product1/Slide9-p1.PNG" alt="9"></div>
-                    <div class="slide"><img src="./images/product1/Slide10-p1.PNG" alt="10"></div>
-                </div>
-        
-                <button class="next" onclick="nextSlide()">&#10095;</button>
-            </div>
-        
-            <div class="indicator-container">
-                <div class="indicator active">1</div>
-                <div class="indicator">2</div>
-                <div class="indicator">3</div>
-                <div class="indicator">4</div>
-                <div class="indicator">5</div>
-                <div class="indicator">6</div>
-                <div class="indicator">7</div>
-                <div class="indicator">8</div>
-                <div class="indicator">9</div>
-                <div class="indicator">10</div>
-            </div>
-        </div>
-    
+        </div>   
 
     <main>
         <div class="table">
             <table>
                 <tbody>
                     <tr>
+                        <th>背景</th>
+                        <td>ハッカソンお題「しかく」から「市か区」を連想。観光と言ったら写真！<br>その写真を活用して観光大臣になり旅をより一層楽しめるようにしたい！</td>
+                    </tr>
+                    <tr>
                         <th>目的</th>
-                        <td>webアプリを初めて作ってみる。画像処理を取り入れてみたい<br>大学にある体組成計の記録用紙をデジタル化してみる</td>
+                        <td>はじめてのチーム開発。深層学習を取り入れてみたい!<br>geminiApiを使ったAI文章を作成してみたい!</td>
                     </tr>
                     <tr>
                         <th>機能</th>
-                        <td>(1) 記録用紙の画像から数値の取得(画像処理 : 二値化→領域検出→k-nn最近傍法)<br>
-                            (2) 得られた数値を可視化(目標との差分値の表示、現在の体組成割合を円グラフで)<br>
-                            (3) 過去の履歴の表示(データ項目ごとの折れ線グラフ、データの一覧)<br>
-                            (4) カレンダーをもちいた運動の記録<br>           
-                            (5) 豆知識表示<br>   
-                            (6) 入力回数によるキャラクターの成長<br>
-                            (7) ログイン/サインイン<br>    
+                        <td>(1)Googleアカウントで簡単にログイン/サインアップ<br>
+                            (2)スマートフォンのカメラで自撮り写真を撮影📷<br>
+                            (3)撮影した写真から、ランダムであなたを素敵な観光地へ案内してくれます<br>
+                            (4)この画像を自由にカスタマイズして、オリジナルの観光ポスターを作成<br>
+                            (5)AIがあなたを観光大臣としてポスターと一緒に観光地を宣伝！<br>
+                            (6)実際に観光地に訪れて写真を撮ると、お得な割引券をゲットできるかも!?<br>
+                            (7)みんなにポスターを公開して、観光地を盛り上げよう！<br>
                         </td>
                     </tr>
                     <tr>
                        <th>担当箇所</th>
-                       <td>すべて(個人)</td>
+                       <td>撮影した画像から人物領域のセグメンテーションAPI作成(前処理、人物検出、領域補正)<br>
+                        この人物と背景の合成画像から画像編集機能(画像加工、テキスト、オブジェクトの追加・編集)<br>
+                        GeminiAPIプロンプト作成<br>
+                    </td>
                     </tr>
                     <tr>
                         <th>使用技術</th>
                         <td>言語>>Typescript/Python/HTML/JavaScript/CSS<br>
-                            フレームワーク>>Next.js/Frask/React/CSS Modules/CSS<br>
+                            フレームワーク>>Next.js/Frask/React/WebRTC/CSS Modules/tailwind CSS<br>
                             データベース>>Firestore<br>
-
+                            外部API>>Gemini,(model:Gemini-Pro)
                         </td>
                         
                     </tr>
                     <tr>
                         <th>発表プロダクト</th>
-                        <td>KCL☆Hack(2024.11.17)<br>金賞受賞</td>
+                        <td>ハックツハッカソン(2024.12.15)<br>Progate賞受賞</td>
                     </tr>
                     <tr>
                         <th>制作期間</th>
-                        <td>(webアプリの仕組みなどの勉強)  3か月<br>
-                        (デザイン・コーディング)                2か月</td>
+                        <td>10日間</td>
+                    </tr>
+                    <tr>
+                        <th>外部記事</th>
+                        <td><a href='https://topaz.dev/projects/3d8247708bf924069bec' >Topa'z記事</a></td>
                     </tr>
                 </tbody>
             </table>
