@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles/productpage.css">
+    <link rel="stylesheet" href="./../styles/product.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="./../index.html">
+                <div class="headerBIG">
+                   ←Home
+                </div>
+            </a>
+        </nav>
+    </header>
+            <div class="topmargin"></div>
+
+        <div class="Ptitle">
+            <div class="titleText">
+                <h3>あなたが観光大使になれる観光支援アプリ</h3>
+                <h1>ThanksLink</h1>
+
+                <h4>-画像処理を用いて写真を観光ポスター風に加工-</h4>
+            </div>
+            <img src="./../Public/images/shikaku.png" alt="" >
+        </div> 
+        <div class="slider-back">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQXEChvh0m2dLl_WKhAYxZnBBBab_5WR2FdlqFO0Kt_l51gljkIdxFEqgL85MkJQ6PivE6Cyw2XayPg/embed?start=true&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+    <main>
+        <div class="table">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>GitHub</th>
+                        <td><a href='https://github.com/jangwoung/GAKUSAI-AnkyloCup' >github/jangwoung/GAKUSAI-AnkyloCup</a></td>
+                    </tr>
+                    <tr>
+                        <th>背景</th>
+                        <td>ハッカソンお題「しかく」から「市か区」を連想。観光と言ったら写真！<br>その写真を活用して観光大臣になり旅をより一層楽しめるようにしたい！</td>
+                    </tr>
+                    <tr>
+                        <th>目的</th>
+                        <td>はじめてのチーム開発。深層学習を取り入れてみたい!<br>geminiApiを使ったAI文章を作成してみたい!</td>
+                    </tr>
+                    <tr>
+                        <th>機能</th>
+                        <td>(1)Googleアカウントで簡単にログイン/サインアップ<br>
+                            (2)スマートフォンのカメラで自撮り写真を撮影📷<br>
+                            (3)撮影した写真から、ランダムであなたを素敵な観光地へ案内してくれます<br>
+                            (4)この画像を自由にカスタマイズして、オリジナルの観光ポスターを作成<br>
+                            (5)AIがあなたを観光大臣としてポスターと一緒に観光地を宣伝！<br>
+                            (6)実際に観光地に訪れて写真を撮ると、お得な割引券をゲットできるかも!?<br>
+                            (7)みんなにポスターを公開して、観光地を盛り上げよう！<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>制作人数</th>
+                        <td>2名</td>
+                    </tr>
+                    <tr>
+                       <th>担当箇所</th>
+                       <td>撮影した画像から人物領域のセグメンテーションAPI作成(前処理、人物検出、領域補正)<br>
+                        この人物と背景の合成画像から画像編集機能(画像加工、テキスト、オブジェクトの追加・編集)<br>
+                        GeminiAPIプロンプト作成<br>
+                    </td>
+                    </tr>
+                    <tr>
+                        <th>使用技術</th>
+                        <td>言語>>Typescript/Python/HTML/JavaScript/CSS<br>
+                            フレームワーク>>Next.js/Frask/React/WebRTC/CSS Modules/tailwind CSS<br>
+                            データベース>>Firestore<br>
+                            外部API>>Gemini,(model:Gemini-Pro)
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <th>発表プロダクト</th>
+                        <td>ハックツハッカソン(2024.12.15)<br>Progate賞受賞</td>
+                    </tr>
+                    <tr>
+                        <th>制作期間</th>
+                        <td>10日間</td>
+                    </tr>
+                    <tr>
+                        <th>外部記事</th>
+                        <td><a href='https://topaz.dev/projects/3d8247708bf924069bec' >Topa'z記事</a></td>
+                    </tr>
+                </tbody>
+            </table>
+       
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!--contactModal -->
+    <div id="modal-contact"></div>
+    <div id="modal-product1"></div>
+    
+
+    <script src="contactModal.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
