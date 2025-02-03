@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles/productpage.css">
+    <link rel="stylesheet" href="./../styles/product.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="./../index.html">
+                <div class="headerBIG">
+                   ←Home
+                </div>
+            </a>
+        </nav>
+    </header>
+            <div class="topmargin"></div>
+
+        <div class="Ptitle">
+            <div class="titleText">
+                <h3>「ありがとう」で繋がる・広がるSNS</h3>
+                <h1>ThanksLink</h1>
+
+                <h4>-この気持ちにまた会おう-</h4>
+            </div>
+            <img src="./../Public/images/ThanksLink.png" alt="" >
+        </div> 
+        <div class="slider-back">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQXEChvh0m2dLl_WKhAYxZnBBBab_5WR2FdlqFO0Kt_l51gljkIdxFEqgL85MkJQ6PivE6Cyw2XayPg/embed?start=true&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+    <main>
+        <div class="table">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>GitHub</th>
+                        <td><a href='https://github.com/0-s0g0/thankyou-app' >github.com/0-s0g0/thankyou-app</a></td>
+                    </tr>
+                    <tr>
+                        <th>背景</th>
+                        <td>「うれしい」を共有したい！この気持ちを忘れたくない！<br>そんな気持ちをいつでもどこでも共有できるアプリを作りたい</td>
+                    </tr>
+                    <tr>
+                        <th>目的</th>
+                        <td>SQLデータベースの勉強がしたい<br>物理演算を用いるフレームワークに挑戦してみたい</td>
+                    </tr>
+                    <tr>
+                        <th>機能</th>
+                        <td>(1)「ありがとう」の投稿<br>
+                            グループの作成ができ、グループごとに些細なことでも「ありがとう」をつぶやくことができる<br>
+                            投稿に対するいいね・コメントができる<br>
+                            (2)誕生日のお祝い機能<br>
+                            メッセージカードを作成・送信することができる<br>
+                            (3)感謝の見える化<br>
+                            グループごとの投稿数をボールの大きさで可視化 <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>制作人数</th>
+                        <td>2名</td>
+                    </tr>
+                    <tr>
+                       <th>担当箇所</th>
+                       <td>POST/reply投稿・作成画面<br>
+                        誕生日（受信・送信）画面・メッセージカード作成機能<br>
+                        GeminiAPIプロンプト作成<br>
+                        master.jsによるボールの作成<br>
+                    </td>
+                    </tr>
+                    <tr>
+                        <th>使用技術</th>
+                        <td>言語>>Typescript/JavaScript/CSS/SQL<br>
+                            フレームワーク>>Next.js/master.js/React/tailwind CSS<br>
+                            データベース>>Supabase<br>
+                            外部API>>Gemini,(model:Gemini-Pro)
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <th>発表プロダクト</th>
+                        <td>技育camp(2025.1.19)<br>努力賞受賞</td>
+                    </tr>
+                    <tr>
+                        <th>制作期間</th>
+                        <td>7日間</td>
+                    </tr>
+                    <tr>
+                        <th>外部記事</th>
+                        <td><a href='https://x.com/geek_pjt/status/1880902623957827945' >技育プロジェクト|サポーターズ公式X</a></td>
+                    </tr>
+                </tbody>
+            </table>
+       
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!--contactModal -->
+    <div id="modal-contact"></div>
+    <div id="modal-product1"></div>
+    
+
+    <script src="contactModal.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
