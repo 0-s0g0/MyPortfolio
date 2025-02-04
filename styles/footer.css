@@ -37,3 +37,13 @@
 
 .fa-instagram{color:black;}
 .fa-github{color:black;}
+
+@media (max-width: 670px) {
+    .footer-main{
+        font-size:0.8rem;
+    }
+    .footer-main p{
+        font-size:0.8rem;
+    }
+    
+    }
