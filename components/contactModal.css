@@ -1,0 +1,142 @@
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+/* モーダルコンテンツ */
+.modal-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 閉じるボタン */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #e74c3c;
+}
+
+/* フォームの背景 */
+.contact-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Zen', sans-serif;
+}
+
+.contact-tiele {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: dashed rgba(231, 92, 185, 0.53);
+}
+.contact-index {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #e1cabba4;
+    padding:6px;
+    border-radius:10px;
+}
+.contact-line{
+    height:10px;
+    background-color:black;
+}
+/* 入力フォーム */
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size:1rem;
+
+    padding:30px;
+    border-bottom:2px solid rgba(114, 103, 96, 0.64);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* 送信ボタン */
+.button-submit {
+    background: linear-gradient(135deg,rgba(213, 102, 223, 0.37),rgba(231, 92, 185, 0.53));
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.SNS{
+    background: linear-gradient(135deg,rgba(213, 102, 223, 0.37),rgba(231, 92, 185, 0.53));
+    width:90%;
+    border-radius: 5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-top:5px;
+}
+.SNS:hover {
+    background: linear-gradient(135deg, #6c5ce7, #3498db);
+}
+
+.SNS a{
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    padding:5px;
+}
+
+
+.button-submit:hover {
+    background: linear-gradient(135deg, #6c5ce7, #3498db);
+}
+
+/* フェードインアニメーション */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

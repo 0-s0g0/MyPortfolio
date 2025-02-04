@@ -1,15 +1,28 @@
 <div id="Modalcontact" class="modal">
     <div class="modal-content">
         <span id="CloseModalContact" class="close">&times;</span>
-        <h2>Contact Me</h2>
-        <form action="contact.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+
+        <div class="contact-back">
+            <div class ="fa fa-envelope"></div>
+            <div class="contact-tiele">Contact Me</div>
+
+            <div class="contact-index">For Mail</div>
+            
+            <form action="contact.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="button-submit">Send</button>
+            </form>
+            <div class="contact-line"></div>
+            <div class="contact-index">For SNS</div>
+            <div class="SNS">
+                <a href='https://www.instagram.com/0_s0g0' >instagramDM</a>
+       
+            </div>
+        </div>
     </div>
 </div>

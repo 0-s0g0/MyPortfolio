@@ -58,17 +58,17 @@
 }
 
 .product-item img{
-    width: 30%;
+    width: 45%;
     object-fit:contain;
 }
 
 .product-item2 img{
-    width: 30%;
+    width: 45%;
     object-fit:contain;
 }
 
 .product-item3 img{
-    width: 30%;
+    width: 45%;
     object-fit:contain;
 }
 
@@ -77,7 +77,7 @@
     flex-direction: column;
     margin: 0 5%;
     justify-content: center;
-    width: 40%;
+    width: 50%;
 }
 .product-icons{
     display: flex;
@@ -109,7 +109,7 @@
 }
 .product-type{
     margin-left: 10px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #a1bfec;
 }
 .product-award{
@@ -118,14 +118,14 @@
     border-bottom: dotted 3px orange;
 }
 .product-title{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 60px;
     border-bottom: solid 2px rgb(43, 41, 39);
     
 }
 .product-coment{
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .product-skil{
     color: rgb(155, 170, 184);

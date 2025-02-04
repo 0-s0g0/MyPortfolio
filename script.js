@@ -12,3 +12,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     targets.forEach(target => observer.observe(target));
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".aboutmeback, .concept-back");
+
+    function fadeInOnScroll() {
+        elements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            if (rect.top < windowHeight * 0.9) { // 画面の90%に達したら表示
+                element.classList.add("show");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", fadeInOnScroll);
+    fadeInOnScroll(); // 初回チェック
+});

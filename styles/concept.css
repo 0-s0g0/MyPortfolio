@@ -1,0 +1,12 @@
+.concept-back{
+    font-family:'Zen';
+    margin-bottom:100px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.concept-back.show {
+    opacity: 1;
+    transform: translateY(0);
+}
