@@ -3,6 +3,28 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.product-back {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    border: 10px double #f8edeb;
+    box-shadow: 0 0 0 6px #f8edeb;
+    padding: 16px;
+    margin: 20px;
+    
+    /* 初期状態（透明で少し下にズレる） */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* 画面に入ったら適用するクラス */
+.product-back.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .product-item {
@@ -65,7 +87,7 @@
 
 .product-kozin{
     background-color: rgb(190, 160, 188);
-    line-height:40px;/*縦中央揃えにするならheightと同じ値にする*/
+    line-height:40px;
     font-family: 'Zen';
     color: #ffffff;
     font-size: 1.5rem;
@@ -110,8 +132,66 @@
     margin-top: 10px;
     font-size: 1rem;
 }
+////////////////////////////////////////
+//button
+////////////////////////////////////////
+.product-button{
+    margin: 60px;
+}
+.product-button a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 225px;
+    padding: 10px 0px 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.product-button a:before, .product-button a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+}
+.product-button a:before {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 1.1rem;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  z-index: 2;
+  transform: translateY(-50%) rotate(45deg);
+  transition: all 0.3s;
+}
+.product-button a:after {
+  left: 0;
+  background: #e1cabba4;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 4rem;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+}
+.product-button a span {
+  position: relative;
+  transition: all 0.3s;
+  z-index: 3;
+}
 
 
+.product-button a:hover:before {
+  left: 2rem;
+}
+.product-button a:hover:after {
+  right: 0;
+  width: 100%;
+}
+///////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 1400px) {   
 
     .product-item img{
@@ -135,13 +215,13 @@
     }
     
     .product-kozin{
-        line-height:50px;/*縦中央揃えにするならheightと同じ値にする*/
+        line-height:50px;
         font-size: 1.5rem;
         height: 50px;
         width: 150px;
     }
     .product-team{
-        line-height:50px;/*縦中央揃えにするならheightと同じ値にする*/
+        line-height:50px;
         font-size: 1.5rem;
         height: 50px;
         width: 150px;
@@ -170,7 +250,7 @@
 
 
 }
-
+////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 1000px) {
     .product-item img{
         width: 40%;
@@ -226,6 +306,7 @@
     }
 
 }
+
 
 @media (max-width: 670px) {
     .product-grid{

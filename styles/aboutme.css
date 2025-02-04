@@ -1,11 +1,25 @@
+.aboutmeback{
+    display:flex;
+    flex-direction:low;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    margin:50px;
+    
+}
+
+
 .aboutmeBox{
     display:flex;
     flex-direction:low;
     justify-content:center;
     align-items:center;
-    gap:100px
+    gap:100px;
+    width:80%;
     
 }
+
+
 
 .about-me img{
     height:300px;
@@ -21,5 +35,6 @@
 
 .aboutmetextName{
     font-weight: bold;
+    font-size:2rem;
 
 }
