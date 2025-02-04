@@ -1,0 +1,39 @@
+
+.footer-circle {
+    height:200px;
+    border-radius:800px ;
+    background: #e1cabba4;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+  }
+
+.footer-text{
+    width:60%;   
+}
+.footer-main{
+    font-family:'Zen';
+    font-size:2rem;
+    border-bottom:2px solid rgba(114, 103, 96, 0.64);
+}
+.footer-main p{
+    font-family:'Zen';
+    font-size:1rem;
+}
+.footer-main2{
+    font-family:'Zen';
+    display:flex;
+    gap:100px;
+    flex-direction:row;
+    hight:300px;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+}
+.icon{
+    gap:100px;
+}
+
+.fa-instagram{color:black;}
+.fa-github{color:black;}
