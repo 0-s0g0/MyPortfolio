@@ -9,6 +9,7 @@
     transform: translateY(50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
     
+    
 }
 .aboutmeback.show {
     opacity: 1;
@@ -22,6 +23,7 @@
     align-items:center;
     gap:100px;
     width:80%;
+    
     
 }
 
@@ -42,5 +44,20 @@
 .aboutmetextName{
     font-weight: bold;
     font-size:2rem;
+
+}
+
+@media (max-width: 670px) {
+.aboutmeback{
+    margin:0;
+}
+.aboutmeBox{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    
+    
+}
+
 
 }
