@@ -152,3 +152,33 @@ table  {
   table tr{
     border-bottom: 1px solid #ccc; /* 各行の下に横線を1本 */
   }
+
+
+
+  @media (max-width: 670px) {
+    .Ptitle{
+        margin-top:20px;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        gap:100px;
+    }
+
+    .Ptitle img{
+        height:300px
+    }
+
+    .slider {
+        width: 300px;
+        overflow: hidden;
+        position: relative;
+        height:300px;
+        margin:0,50px;
+    }
+
+    .slide {
+        width: 260px;
+    }
+
+  }
